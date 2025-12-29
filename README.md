@@ -1,4 +1,4 @@
-# Watchlist 🎬
+# Watchlist
 
 ```
 ██╗    ██╗ █████╗ ████████╗ ██████╗██╗  ██╗██╗     ██╗███████╗████████╗
@@ -11,7 +11,7 @@
 
 Eine moderne Flask-Webanwendung zum Verwalten deiner persönlichen Film-Watchlists. Behalte den Überblick über alle Filme, die du sehen möchtest!
 
-## 📖 Über das Projekt
+## Über das Projekt
 
 Watchlist ist eine Web-App, die es dir ermöglicht:
 - Mehrere User zu erstellen (perfekt für Familien oder WGs!)
@@ -20,16 +20,16 @@ Watchlist ist eine Web-App, die es dir ermöglicht:
 - Filme zu bearbeiten und zu löschen
 - Alles in einem schicken Dark-Mode-Design zu verwalten
 
-## ✨ Features
+## Features
 
-- 🎭 **Multi-User Support** - Jeder User hat seine eigene Watchlist
-- 🎬 **OMDB Integration** - Automatisches Abrufen von Film-Daten
-- 🎨 **Dark Mode Design** - Modernes, minimalistisches UI
-- ✏️ **CRUD Operations** - Erstellen, Lesen, Bearbeiten, Löschen von Filmen
-- 📱 **Responsive** - Funktioniert auf Desktop & Mobile
-- ⚡ **Schnell & Leichtgewichtig** - Flask + SQLite
+- **Multi-User Support** - Jeder User hat seine eigene Watchlist
+- **OMDB Integration** - Automatisches Abrufen von Film-Daten
+- **Dark Mode Design** - Modernes, minimalistisches UI
+- **CRUD Operations** - Erstellen, Lesen, Bearbeiten, Löschen von Filmen
+- **Responsive** - Funktioniert auf Desktop & Mobile
+- **Schnell & Leichtgewichtig** - Flask + SQLite
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 **Backend:**
 - Python 3.13
@@ -45,7 +45,7 @@ Watchlist ist eine Web-App, die es dir ermöglicht:
 **APIs:**
 - OMDB API (Movie Database)
 
-## 📦 Installation
+## Installation
 
 ### Voraussetzungen
 - Python 3.13 oder höher
@@ -92,7 +92,7 @@ Watchlist ist eine Web-App, die es dir ermöglicht:
 
 Die Datenbank wird automatisch beim ersten Start erstellt!
 
-## 🚀 Usage
+## Usage
 
 ### User erstellen
 1. Gehe zur Homepage
@@ -109,7 +109,7 @@ Die Datenbank wird automatisch beim ersten Start erstellt!
 - **Update:** Ändere den Titel im Input-Feld und klicke "Update"
 - **Delete:** Klicke auf "Delete" (mit Bestätigung)
 
-## 📁 Projektstruktur
+## Projektstruktur
 
 ```
 watchlist/
@@ -127,7 +127,7 @@ watchlist/
     └── watchlist.db    # SQLite Database
 ```
 
-## 🎨 Design Features
+## Design Features
 
 - **Dark Theme** - Emerald Green Accents (#10b981)
 - **Modern Typography** - Custom Font Stack
@@ -135,13 +135,13 @@ watchlist/
 - **Responsive Layout** - Mobile-First Design
 - **Alert System** - Success/Error Messages
 
-## 🐛 Known Issues
+## Known Issues
 
 - Keine User-Authentifizierung (jeder kann alles bearbeiten)
 - OMDB API limitiert auf 1000 Requests/Tag (Free Tier)
 - Keine Duplikat-Prüfung bei Filmen
 
-## 🚧 Roadmap
+## Roadmap
 
 - [ ] User Authentication & Login
 - [ ] Film-Ratings hinzufügen
@@ -150,11 +150,11 @@ watchlist/
 - [ ] Dark/Light Mode Toggle
 - [ ] Film-Empfehlungen basierend auf Watchlist
 
-## 📝 License
+## License
 
 Dieses Projekt wurde für Lernzwecke erstellt.
 
-## 🙏 Credits
+## Credits
 
 - **OMDB API** - Movie Database
 - **Google Fonts** - Typography
@@ -163,4 +163,4 @@ Dieses Projekt wurde für Lernzwecke erstellt.
 
 ---
 
-Made with ❤️ and Python
+Made with Python
