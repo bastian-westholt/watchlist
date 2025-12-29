@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content %}
+    {% if success %}
+        <div class="alert alert-success">
+            <h3><strong>SUCCESS! </strong>MOVIE ADDED TO DATABASE</h3>
+        </div>
+    {% endif %}
+    {% if update %}
+        <div class="alert alert-success">
+            <h3><strong>SUCCESS! </strong>MOVIE WAS UPDATED</h3>
+        </div>
+    {% endif %}
+    {% if delete %}
+        <div class="alert alert-error">
+            <h3><strong>SUCCESS! </strong>MOVIE WAS DELETED</h3>
+        </div>
+    {% endif %}
+    <h1>MOVIES</h1>
+    {% for movie in movies %}
+        <div class="movie">
+            <form action="/users/{{ user_id }}/movies/{{ movie.id }}/update" method="POST">
+                <img src="{{ movie.poster_url }}" alt="{{ movie.title }}" class="movie-poster">
+
+                <div class="movie-content">
+                    <div>
+                        <input type="text" name="movie-title" placeholder="{{ movie.title }}" class="movie-title-input">
+
+                        <div class="movie-info">
+                            <p><strong>Year:</strong> {{ movie.year }}</p>
+                            <p><strong>Director:</strong> {{ movie.director }}</p>
+                        </div>
+                    </div>
+
+                    <div class="movie-actions">
+                        <button type="submit" name="movie-title" class="btn btn-update">Update</button>
+                        <button type="submit" formaction="/users/{{ user_id }}/movies/{{ movie.id }}/delete" class="btn btn-delete" onclick="return confirm('Film wirklich löschen?')">Delete</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    {% endfor %}
+    <div class="add">
+        <h3>ADD MOVIE</h3>
+        <form action="/users/{{ user_id }}/movies" method="POST">
+            <input type="text" id="movie" name="movie">
+            <input type="submit" value="ADD MOVIE">
+        </form>
+    </div>
+{% endblock %}

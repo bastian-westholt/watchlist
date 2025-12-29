@@ -1,10 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Watchlist - Homepage</title>
-</head>
-<body>
-
-</body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+    {% if success %}
+        <div class="alert alert-success">
+            <h3><strong>SUCCESS! </strong>USER ADDED TO DATABASE</h3>
+        </div>
+    {% endif %}
+    <h1>USERS</h1>
+    {% for user in users %}
+        <div class="user">
+            <h3>{{ user.name }}</h3>
+            <a href="/users/{{ user.id }}/movies" class="btn">VIEW MOVIES</a>
+        </div>
+    {% endfor %}
+    <div class="add">
+        <h3>ADD USER</h3>
+        <form action="/users" method="POST">
+            <input type="text" id="username" name="username">
+            <input type="submit" value="ADD USER">
+        </form>
+    </div>
+{% endblock %}
