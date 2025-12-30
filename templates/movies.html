@@ -5,6 +5,11 @@
             <h3><strong>SUCCESS! </strong>MOVIE ADDED TO DATABASE</h3>
         </div>
     {% endif %}
+    {% if error %}
+        <div class="alert alert-error">
+            <h3><strong>ERROR: </strong>{{ request.args.get('error') | upper }}</h3>
+        </div>
+    {% endif %}
     {% if update %}
         <div class="alert alert-success">
             <h3><strong>SUCCESS! </strong>MOVIE WAS UPDATED</h3>

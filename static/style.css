@@ -468,6 +468,48 @@ footer {
     background: rgba(244, 63, 94, 0.2);
 }
 
+/* ===== ERROR PAGES ===== */
+.error-page {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.error-page h1 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.error-page h1.error-404 {
+    color: var(--color-accent);
+}
+
+.error-page h1.error-500 {
+    color: #ef4444;
+}
+
+.error-page h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-text);
+}
+
+.error-page p {
+    color: var(--color-text-muted);
+    margin: 1.5rem 0;
+    font-size: 1.1rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.error-page .btn {
+    margin-top: 2rem;
+    display: inline-block;
+}
+
 /* ===== REDUCED MOTION ===== */
 @media (prefers-reduced-motion: reduce) {
     *,
