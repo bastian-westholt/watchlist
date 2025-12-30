@@ -1,0 +1,17 @@
+# Flask web framework
+Flask==3.1.0
+
+# SQLAlchemy ORM extension for Flask
+Flask-SQLAlchemy==3.1.1
+
+# HTTP library for OMDB API requests
+requests==2.32.5
+
+# Environment variable management
+python-dotenv==1.1.1
+
+# Core dependencies (installed automatically with Flask/Flask-SQLAlchemy)
+# Werkzeug>=3.0.0
+# Jinja2>=3.1.0
+# SQLAlchemy>=2.0.0
+# click>=8.1.0
